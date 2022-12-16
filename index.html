@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    
+      body {
+      background: #96c0d6;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      }
+
+.text {
+  color: rgb(241, 12, 12);
+  font-family: "Russo One", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 2rem 1rem;
+  opacity: 0;
+  animation: fadeInText 0s 1.1s both;
+}
+
+.text-block {
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .text-block:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+         background: #c48e84;
+         transform: translateX(-100%);
+         animation: enlargeBlock .5s .6s both,reveaBlock .5s 1.1s both;
+        }
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+    to {
+      opacity: 1;
+    }
+  }
+    
+  @keyframes enLargeBlock {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+    
+  }
+        @keyframes reveaBlock {
+          from {
+            transform: translateX(0);
+          }
+          to{
+            transform: translateX(100%);
+
+          }
+        }
+    
+      
+        
+    </style>
+<body>
+  <div class="text-block"><
+         <h1 class="text"> BEM-VINDO AO MEU PROJETO</h1> 
+        
+<script src="index.js"></script>
+</body>
+<body style="background-color:#DBF9FC;">
+</html>
+
